@@ -17,11 +17,11 @@
 <body>
 
   <div class="container ">
-    <form action="/" method="post">
+    <form action="/" method="post" onsubmit="return validate()">
       <div>
-      <h1 id ="head">Enter your marks </h1>
-      <a href="/refresh" class ="justify-content-end">Refresh</a>
-    </div>
+        <h1 id="head">Enter your marks </h1>
+        <a href="/refresh" class="justify-content-end">Refresh</a>
+      </div>
       <div class="container">
 
         <table class="table">
@@ -37,8 +37,13 @@
           <tbody id="formID">
             <tr>
               <th scope="row">1</th>
-              <td><input type="text" name="name" value=""></td>
-              <td><input type="text" name="code" value=""></td>
+              <td><input type="text" name="name" id="name">
+                <p class="hidden">Enter name</p>
+              </td>
+
+              <td><input type="text" name="code" id="subcode">
+                <p class="hidden1">Enter subject code</p>
+              </td>
               <td> <select class="custom-select" id="inputGroupSelect01" name="credit">
                   <option selected>Choose...</option>
                   <option value=1>One</option>
@@ -46,6 +51,7 @@
                   <option value=3>Three</option>
                   <option value=4>Four</option>
                 </select>
+                <p class="hidden2">Choose credit</p>
               </td>
               <td> <select class="custom-select" id="inputGroupSelect02" name="grade">
                   <option selected>Choose...</option>
@@ -56,6 +62,7 @@
                   <option value=6>B</option>
                   <option value=0>RA</option>
                 </select>
+                <p class="hidden3">Choose grade</p>
               </td>
             </tr>
           </tbody>
