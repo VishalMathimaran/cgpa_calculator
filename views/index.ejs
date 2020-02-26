@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CGPA Calculator</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link href="/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <form action="/" method="post">
+      <h1 id ="head">Enter your marks</h1>
+      <div class="container">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Subject Name</th>
+              <th scope="col">Subject Code</th>
+              <th scope="col">Credit</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody id="formID">
+            <tr>
+              <th scope="row">1</th>
+              <td><input type="text" name="name" value=""></td>
+              <td><input type="text" name="code" value=""></td>
+              <td> <select class="custom-select" id="inputGroupSelect01" name="credit">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="4">Four</option>
+                </select>
+              </td>
+              <td> <select class="custom-select" id="inputGroupSelect02" name="grade">
+                  <option selected>Choose...</option>
+                  <option value="10">O</option>
+                  <option value="9">A+</option>
+                  <option value="8">A</option>
+                  <option value="7">B+</option>
+                  <option value="6">B</option>
+                  <option value="0">RA</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" id="add" class="btn btn-primary">Add new</button><br>
+        <div class="d-flex flex-row-reverse">
+          <button type="submit" class="d-flex justify-content-end btn btn-success">Submit</button><br>
+        </div>
+
+    </form>
+  </div>
+
+  <script src="action.js"></script>
+</body>
+
+</html>
