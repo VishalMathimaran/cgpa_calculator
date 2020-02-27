@@ -1,13 +1,5 @@
 #head{
+  /* heading with a refresh button inline with 50px margin*/
   display: inline-block;
   margin:50px;
-}
-body{
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height:100vh;
-  /* background-image:linear-gradient(to right bottom, rgba(216, 27, 96, 0.3), rgba(136, 14, 79, 0.6)),url('/96482.jpg'); */
-
-
 }
