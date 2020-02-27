@@ -3,7 +3,7 @@ A simple cgpa calculating website for Anna University students.
 
 ## Installation
 
-Download [node](https://nodejs.org/en/download/) to install Nodejs.
+Download [nodejs](https://nodejs.org/en/download/).
 
 For ubuntu:
 
